@@ -13,9 +13,7 @@ contract("Election",function(accounts))
             assert.equal(count,2);
         });
     });
-<<<<<<< Updated upstream
 }
-=======
 
 it("it initializes the candidates with the correct values",function(){
     return Election.deployed().then(function(insatnce){
@@ -52,4 +50,3 @@ it("allows a voter to cast a vote", function() {
       assert.equal(voteCount, 1, "increments the candidate's vote count");
     })
   });
->>>>>>> Stashed changes
