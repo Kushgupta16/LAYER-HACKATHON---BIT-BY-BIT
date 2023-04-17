@@ -10,18 +10,40 @@
     background-color: black;
     font-size: 1.4em;
   }
-  button {
+  .btn {
     border: none;
-    color: white;
-    padding: 15px 32px;
+    display: block;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+    background-color: #222;
+    padding: 17px 60px;
+    margin: 0 auto;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.20);
   }
-  button:hover {
-    color: white;
-    background-color: grey;
+  .btn:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 490%;
+    width: 140%;
+    background: #78c7d2;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+    transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  }
+  
+  .btn:hover:after {
+    -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+    transform: translateX(-9%) translateY(-25%) rotate(45deg);
   }
   
   .banner {
@@ -42,7 +64,7 @@
   /* Style the top navigation bar */
   nav {
     display: flex;
-    background-color: #333;
+    background-color: black;
     align-items: center;
   }
   
@@ -215,13 +237,24 @@
     max-width: 100vh;
     height: 100vh;
   }
+  .container {
+    position: relative;
+  }
+  
+  .vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
   
   footer {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: black;
+    background-color: #ffffff00;
     display: flex;
     overflow: hidden;
     clear: both;
