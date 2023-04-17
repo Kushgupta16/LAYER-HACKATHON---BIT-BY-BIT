@@ -4,7 +4,7 @@ contract Election{
     struct Candidate {
         uint id;
         string name;
-        unit voteCount;  
+        uint voteCount;  
     }
 
     mapping(address => bool) public voters;
@@ -17,8 +17,8 @@ contract Election{
     );
 
     constructor () public {
-        addCandidate("Candidate 1")
-        addCandidate("Candidate 2")
+        addCandidate("Candidate 1");
+        addCandidate("Candidate 2");
     }
 
     function addCandidate (string _name) private {
