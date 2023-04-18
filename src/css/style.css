@@ -10,9 +10,21 @@
     background-color: black;
     font-size: 1.4em;
   }
+  button {
+    height: 30px;
+    width: 20px;
+    border:none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  
   .btn {
     border: none;
-    display: block;
+    display: inline-block;
     text-align: center;
     cursor: pointer;
     text-transform: uppercase;
@@ -22,18 +34,20 @@
     color: #fff;
     font-weight: 700;
     font-size: 15px;
+    vertical-align: middle;
     background-color: #222;
     padding: 17px 60px;
     margin: 0 auto;
     box-shadow: 0 5px 15px rgba(0,0,0,0.20);
   }
   .btn:after {
+    color: black;
     content: "";
     position: absolute;
     left: 0;
     top: 0;
-    height: 490%;
-    width: 140%;
+    height: 600%;
+    width: 150%;
     background: #78c7d2;
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
@@ -42,10 +56,14 @@
   }
   
   .btn:hover:after {
+    color: black;
     -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
     transform: translateX(-9%) translateY(-25%) rotate(45deg);
   }
-  
+  button:hover {
+    color: black;
+    background-color: grey;
+  }
   .banner {
     /* Backgroung banner GIF */
     background-image: url(../assets/logo/logo.gif);
