@@ -29,6 +29,7 @@
   .btn {
     border: none;
     display: inline-block;
+    padding-bottom: 100px;
     text-align: center;
     cursor: pointer;
     text-transform: uppercase;
@@ -46,18 +47,18 @@
   }
   
   .btn:after {
-    color: black;
     content: "";
     position: absolute;
     left: 0;
     top: 0;
-    height: 600%;
-    width: 150%;
+    height: 500%;
+    width: 160%;
     background: #78c7d2;
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
     -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
     transform: translateX(-98%) translateY(-25%) rotate(45deg);
+    color: black;
   }
   
   .btn:hover:after {
