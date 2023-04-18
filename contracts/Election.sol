@@ -22,8 +22,8 @@ contract Election {
     );
 
     constructor () public {
-        addCandidate("BJP");
-        addCandidate("TMC");
+        addCandidate("Candidate 1");
+        addCandidate("Candidate 2");
     }
 
     function addCandidate (string _name) private {
