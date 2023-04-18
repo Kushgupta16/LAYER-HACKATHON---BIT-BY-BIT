@@ -58,13 +58,24 @@
     transition: all .5s ease-in-out;
     -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
     transform: translateX(-98%) translateY(-25%) rotate(45deg);
-    color: black;
+    color: #000;
+    z-index: -1;
   }
   
   .btn:hover:after {
-    color: black;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 500%;
+    width: 160%;
+    background: #78c7d2;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
     -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
     transform: translateX(-9%) translateY(-25%) rotate(45deg);
+    color: #fff;
+    z-index: -1;
   }
   
   button:hover {
